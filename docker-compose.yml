@@ -19,24 +19,53 @@ services:
     environment:
       - ETCD_HOST=etcd-server
 
+  partition:
+    image: "quay.io/daedafusion/partition:latest"
+    ports:
+      - 30203:30203
+      - 40203:40203
+    entrypoint:
+      - java
+      - -Dcapsule.jvm.args=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=40203
+      - -jar
+      - /opt/argos/partition-server.jar
+    command: -H 192.168.99.100
+    links:
+      - mysql-db:partition-db
+      - etcd-server
+    volumes:
+      - ./logs:/var/log/argos
+      - ./.docker-compose/partition:/etc/argos
+    environment:
+      - ETCD_HOST=etcd-server
+
+  mysql-db:
+    image: "mysql:5.6"
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./.docker-compose/mysql:/docker-entrypoint-initdb.d
+
   etcd-server:
+    image: quay.io/coreos/etcd
     ports:
       - 4001:4001
-    image: quay.io/coreos/etcd
     command: -addr 0.0.0.0:4001
 
   memcached-server:
+    image: memcached
     ports:
       - 11211:11211
-    image: memcached
 
   redis-server:
+    image: redis
     ports:
       - 6379:6379
-    image: redis
 
   rabbitmq-server:
+    image: rabbitmq
     ports:
       - 5672:5672
       - 15672:15672
-    image: rabbitmq

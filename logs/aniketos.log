@@ -1,0 +1,175 @@
+2016-06-09 22:11:34 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:11:34 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:11:34 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:11:34 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:11:34 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:11:35 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:11:35 INFO  log:188 - Logging initialized @10673ms
+2016-06-09 22:11:35 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:11:36 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:11:39 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@1e3e1014{/,null,AVAILABLE}
+2016-06-09 22:11:39 INFO  ServerConnector:265 - Started ServerConnector@59ff42f9{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:11:39 INFO  Server:372 - Started @14511ms
+2016-06-09 22:16:40 INFO  ServerConnector:305 - Stopped ServerConnector@59ff42f9{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:16:40 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@1e3e1014{/,null,UNAVAILABLE}
+2016-06-09 22:17:26 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:17:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:17:27 INFO  log:188 - Logging initialized @9981ms
+2016-06-09 22:17:28 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:17:28 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:17:32 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@5f14761c{/,null,AVAILABLE}
+2016-06-09 22:17:32 INFO  ServerConnector:265 - Started ServerConnector@59ff42f9{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:17:32 INFO  Server:372 - Started @14248ms
+2016-06-09 22:20:23 INFO  ServerConnector:305 - Stopped ServerConnector@59ff42f9{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:20:24 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@5f14761c{/,null,UNAVAILABLE}
+2016-06-09 22:20:50 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:20:51 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:20:51 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:20:51 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:20:51 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:20:52 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:20:52 INFO  log:188 - Logging initialized @10346ms
+2016-06-09 22:20:53 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:20:53 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:20:56 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@1d61a348{/,null,AVAILABLE}
+2016-06-09 22:20:57 INFO  ServerConnector:265 - Started ServerConnector@2e6eaf06{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:20:57 INFO  Server:372 - Started @14727ms
+2016-06-09 22:29:18 INFO  ServerConnector:305 - Stopped ServerConnector@2e6eaf06{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:29:18 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@1d61a348{/,null,UNAVAILABLE}
+2016-06-09 22:33:53 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:33:55 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:33:55 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:33:55 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:33:55 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:33:58 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:33:58 INFO  log:188 - Logging initialized @13104ms
+2016-06-09 22:33:58 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:33:58 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:34:02 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@41ad373{/,null,AVAILABLE}
+2016-06-09 22:34:02 INFO  ServerConnector:265 - Started ServerConnector@79a47e11{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:34:02 INFO  Server:372 - Started @16837ms
+2016-06-09 22:35:00 INFO  ServerConnector:305 - Stopped ServerConnector@79a47e11{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:35:01 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@41ad373{/,null,UNAVAILABLE}
+2016-06-09 22:38:22 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:38:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:38:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:38:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:38:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:38:28 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:38:29 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:38:29 INFO  log:188 - Logging initialized @21871ms
+2016-06-09 22:38:29 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:38:29 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:38:37 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@5f14761c{/,null,AVAILABLE}
+2016-06-09 22:38:37 INFO  ServerConnector:265 - Started ServerConnector@600165dc{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:38:37 INFO  Server:372 - Started @30717ms
+2016-06-09 22:43:40 INFO  ServerConnector:305 - Stopped ServerConnector@600165dc{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:43:40 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@5f14761c{/,null,UNAVAILABLE}
+2016-06-09 22:44:11 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:44:13 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:44:13 INFO  log:188 - Logging initialized @14525ms
+2016-06-09 22:44:14 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:44:14 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:44:22 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@52b3bf03{/,null,AVAILABLE}
+2016-06-09 22:44:22 INFO  ServerConnector:265 - Started ServerConnector@30b975ad{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:44:22 INFO  Server:372 - Started @23346ms
+2016-06-09 22:45:38 INFO  ServerConnector:305 - Stopped ServerConnector@30b975ad{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:45:38 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@52b3bf03{/,null,UNAVAILABLE}
+2016-06-09 22:49:22 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:49:23 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.AuthenticationProvider registered
+2016-06-09 22:49:23 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.Authentication registered
+2016-06-09 22:49:23 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider registered
+2016-06-09 22:49:23 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerAuthorization registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.providers.TokenExchangeProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authentication.TokenExchange registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.aniketos.framework.ServerTokenExchange registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.providers.AuthorizationProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.authorization.Authorization registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.providers.ObligationHandlerProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.obligation.ObligationHandler registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.SubjectInspectorProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.SubjectInspector registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.providers.IdentityStoreProvider registered
+2016-06-09 22:49:27 INFO  DefaultServiceRegistry:200 - Service com.daedafusion.security.identity.IdentityStore registered
+2016-06-09 22:49:27 INFO  log:188 - Logging initialized @20117ms
+2016-06-09 22:49:28 INFO  Server:323 - jetty-9.2.2.v20140723
+2016-06-09 22:49:28 INFO  DiscoveryRegistrationListener:64 - Service Registration :: aniketos -> http://192.168.99.100:30001
+2016-06-09 22:49:35 INFO  ContextHandler:744 - Started o.e.j.s.ServletContextHandler@54755dd9{/,null,AVAILABLE}
+2016-06-09 22:49:35 INFO  ServerConnector:265 - Started ServerConnector@1bab335d{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:49:35 INFO  Server:372 - Started @28346ms
+2016-06-09 22:49:43 INFO  ServerConnector:305 - Stopped ServerConnector@1bab335d{HTTP/1.1}{0.0.0.0:30001}
+2016-06-09 22:49:43 INFO  ContextHandler:863 - Stopped o.e.j.s.ServletContextHandler@54755dd9{/,null,UNAVAILABLE}

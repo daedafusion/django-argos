@@ -5,3 +5,4 @@ venv
 logs/*
 .git
 .idea
+.docker-compose

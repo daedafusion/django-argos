@@ -1,0 +1,59 @@
+!!com.daedafusion.sf.config.ServiceConfiguration
+managedObjectDescriptions:
+
+###################################
+# Security
+#
+- infClass: com.daedafusion.security.authentication.TokenExchange
+  implClass: com.daedafusion.security.authentication.TokenExchangeImpl
+
+- infClass: com.daedafusion.security.authentication.providers.TokenExchangeProvider
+  implClass: com.daedafusion.security.providers.AniketosTokenExchangeProvider
+  loaderUri: framework://loader/aniketos-security-client/
+
+- infClass: com.daedafusion.security.authorization.Authorization
+  implClass: com.daedafusion.security.authorization.impl.UnanimousResultAuthorizationImpl
+
+- infClass: com.daedafusion.security.authorization.providers.AuthorizationProvider
+  implClass: com.daedafusion.security.authorization.providers.impl.AlwaysPermitAuthorizationProvider
+
+- infClass: com.daedafusion.security.obligation.ObligationHandler
+  implClass: com.daedafusion.security.obligation.impl.ObligationHandlerImpl
+
+- infClass: com.daedafusion.security.obligation.providers.ObligationHandlerProvider
+  implClass: com.daedafusion.security.obligation.providers.impl.LoggingHandlerProvider
+
+- infClass: com.daedafusion.security.identity.SubjectInspector
+  implClass: com.daedafusion.security.identity.impl.SubjectInspectorImpl
+
+- infClass: com.daedafusion.security.identity.providers.SubjectInspectorProvider
+  implClass: com.daedafusion.security.identity.providers.impl.SingleAPInspector
+
+- infClass: com.daedafusion.security.identity.IdentityStore
+  implClass: com.daedafusion.security.identity.impl.IdentityStoreImpl
+
+- infClass: com.daedafusion.security.identity.providers.IdentityStoreProvider
+  implClass: com.daedafusion.security.providers.AniketosIdentityStoreProvider
+  loaderUri: framework://loader/aniketos-security-client/
+
+##################################
+# Partition
+#
+- infClass: com.daedafusion.knowledge.partition.framework.PartitionStorage
+  implClass: com.daedafusion.knowledge.partition.framework.impl.PartitionStorageImpl
+
+- infClass: com.daedafusion.knowledge.partition.framework.providers.PartitionStorageProvider
+  implClass: com.daedafusion.knowledge.partition.framework.providers.HibernatePartitionStorageProvider
+  loaderUri: framework://loader/partition-storage-hibernate/
+
+loaderDescriptions:
+
+- uri: framework://loader/partition-storage-hibernate/
+  loaderClass: com.daedafusion.sf.loader.impl.ZipLoader
+  resource: file:///opt/argos/plugins/partition-storage-hibernate-plugin.zip
+  properties: {pluginName: partition-storage-hibernate}
+
+- uri: framework://loader/aniketos-security-client/
+  loaderClass: com.daedafusion.sf.loader.impl.ZipLoader
+  resource: file:///opt/argos/plugins/aniketos-security-framework-provider-plugin.zip
+  properties: {pluginName: aniketos-security-client}
