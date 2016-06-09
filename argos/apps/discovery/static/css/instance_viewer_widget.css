@@ -1,0 +1,54 @@
+.instance-viewer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.instance-viewer-header {
+    width: 100%;
+}
+.instance-viewer-header img {
+    max-height: 64px;
+}
+.instance-viewer-tabs {
+    width: 100%;
+    flex-shrink: 1;
+}
+.instance-viewer-content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    width: 100%;
+}
+
+.instance-viewer-content .tab-pane {
+    margin: 2px 2px 2px 2px;
+}
+
+.instance-viewer-content table.dataTable tr.even {
+    background-color: #eee;
+}
+
+.instance-viewer-dialog .tab-pane-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start
+}
+
+.instance-viewer-dialog .pane {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    height: 100%;
+}
+
+.instance-viewer-dialog #table .pane {
+    padding: 4px;
+}

@@ -1,0 +1,42 @@
+version: '2'
+services:
+  aniketos:
+    image: "quay.io/daedafusion/aniketos:latest"
+    ports:
+      - 30001:30001
+      - 40001:40001
+    entrypoint:
+      - java
+      - -Dcapsule.jvm.args=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=40001
+      - -jar
+      - /opt/argos/aniketos-server.jar
+    command: -H 192.168.99.100
+    links:
+      - etcd-server
+    volumes:
+      - ./logs:/var/log/argos
+      - ./.docker-compose/aniketos:/etc/argos
+    environment:
+      - ETCD_HOST=etcd-server
+
+  etcd-server:
+    ports:
+      - 4001:4001
+    image: quay.io/coreos/etcd
+    command: -addr 0.0.0.0:4001
+
+  memcached-server:
+    ports:
+      - 11211:11211
+    image: memcached
+
+  redis-server:
+    ports:
+      - 6379:6379
+    image: redis
+
+  rabbitmq-server:
+    ports:
+      - 5672:5672
+      - 15672:15672
+    image: rabbitmq

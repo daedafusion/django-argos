@@ -1,0 +1,7 @@
+{% for r in research_options %}
+    <div class="option">
+        <h4>{{ r.title }}</h4>
+        <p>{{ r.description }}</p>
+        <button type="button" class="btn btn-default" rtype="{{ r.type }}">Research</button>
+    </div>
+{% endfor %}

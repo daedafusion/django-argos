@@ -1,0 +1,7 @@
+argos/components
+argos/static
+argos/default.db
+venv
+logs/*
+.git
+.idea

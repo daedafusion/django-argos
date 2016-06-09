@@ -1,0 +1,105 @@
+.instance-editor .icon {
+    float: left;
+}
+
+.instance-editor .prop-columns {
+    clear: both;
+}
+.instance-editor .column-header {
+    margin-bottom: 2px;
+}
+.instance-editor .column-header h4 {
+    display: inline-block;
+}
+.instance-editor .add-property-btn {
+    float: right;
+}
+.instance-editor .add-property-btn>button {
+    background-color: #fff;
+    border-color: #000;
+}
+.instance-editor .add-property-btn>button:hover {
+    color: #ccc;
+}
+.instance-editor .add-property-btn>button:focus {
+    color: #000;
+}
+
+.instance-editor .editor-header .comments {
+    padding-left: 80px;
+}
+
+.instance-editor .property {
+    border: 1px solid #000;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    padding: 2px;
+    position: relative;
+}
+
+.instance-editor .delete-property-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.instance-editor .reification-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.instance-editor .property-value {
+    margin-left: 10px;
+}
+
+.instance-editor .property-label {
+    font-weight: bold;
+}
+
+.instance-editor .property-changed {
+    border-left: 4px solid blue;
+}
+
+.instance-editor .comments {
+    font-style: italic;
+    color: #999;
+}
+.instance-editor .property .comments {
+    font-size: .9em;
+}
+.instance-editor .property span.property-uri,
+.instance-editor .property span.resource-uri {
+    color: #999;
+}
+
+/* button pane is outside .instance-editor */
+.settings-btn .dropdown-menu a {
+    white-space: normal;
+}
+.settings-btn .dropdown-menu > li {
+    position: relative;
+}
+.settings-btn .dropdown-menu > li > span {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+.instance-editor-partition-select {
+    float: left !important;
+}
+
+.instance-editor .partition-selected {
+    background-color: #d8ecff;
+}
+.instance-editor .partition-deselected {
+    background-color: #aaa;
+}
+.instance-editor .partition-notset {
+    background-color: #ffff38;
+}
+
+.instance-editor .property input {
+    width: 95%;
+}

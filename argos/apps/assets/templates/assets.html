@@ -1,0 +1,53 @@
+{% extends "left_sidebar.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Assets{% endblock %}
+
+{% block active_assets %}active{% endblock %}
+
+{% block head_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/assets.css' %}">
+{% endblock %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#">
+            <i class="fa fa-cubes fa-fw"></i>
+            <span class="text">Upload</span>
+        </a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div class="content-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 filter-wrapper">
+                    <div class="btn-group asset-filter-menu">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-filter"></span>
+
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">By Time</a></li>
+                            <li><a href="#">By MimeType</a></li>
+                            <li><a href="#">By Target</a></li>
+                            <li><a href="#">By Partition</a></li>
+                            <li><a href="#">By Associations</a></li>
+                            <li><a href="#">By Rating</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 search-bar-wrapper">
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Search..."/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+
+    </div>
+{% endblock %}

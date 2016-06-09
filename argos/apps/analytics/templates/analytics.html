@@ -1,0 +1,40 @@
+{% extends "left_sidebar.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Analytics{% endblock %}
+
+{% block active_analytics %}active{% endblock %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#">
+            <i class="fa fa-group fa-fw"></i>
+            <span class="text">Subject Spaces</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-cubes fa-fw"></i>
+            <span class="text">Models</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="show-fdg">
+                    <span class="text">Statistical Models</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="show-fdg">
+                    <span class="text">Realtime Models</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-bolt fa-fw"></i>
+            <span class="text">Scoring</span>
+        </a>
+    </li>
+{% endblock %}

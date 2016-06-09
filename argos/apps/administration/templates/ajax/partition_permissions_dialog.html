@@ -1,0 +1,14 @@
+<form role="form">
+    <div class="form-group">
+        <label for="identity-list" class="control-label">Give Permission To</label>
+        <select multiple id="identity-list">
+            {% if global %}
+                <option value="global">Global</option>
+            {% endif %}
+            <option value="{{ domain }}">Everyone ({{ domain }})</option>
+            {% for i in identities %}
+                <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</form>

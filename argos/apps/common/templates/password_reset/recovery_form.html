@@ -1,0 +1,18 @@
+{% extends "password_reset/base.html" %}
+{% load i18n %}
+{% load url from future %}
+{% load bootstrap %}
+{% load static %}
+
+{% block title %}{% trans "Password Recovery" %}{% endblock %}
+
+{% block content %}
+    <div class="form-horizontal">
+        <img class="logo" src="{% static "img/daedafusion_logo_r1v2_grey.png" %}" width="300px" />
+        <form method="post" action="{{ url }}">
+            {% csrf_token %}
+            {{ form|bootstrap_horizontal:'col-sm-4 col-md-4' }}
+            <p><input class="btn btn-primary" type="submit" value="{% trans "Recover my password" %}"></p>
+        </form>
+    </div>
+{% endblock %}

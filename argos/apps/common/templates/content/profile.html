@@ -1,0 +1,35 @@
+{% extends "left_sidebar.html" %}
+{% load static %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#">
+            <i class="fa fa-user fa-fw"></i>
+            <span class="text">User Profile</span>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'two_factor:profile' %}">
+            <i class="fa fa-lock fa-fw"></i>
+            <span class="text">Security</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-sliders fa-fw"></i>
+            <span class="text">Preferences</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-sliders fa-fw"></i>
+            <span class="text">Watching</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-sliders fa-fw"></i>
+            <span class="text">History</span>
+        </a>
+    </li>
+{% endblock %}

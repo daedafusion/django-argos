@@ -1,0 +1,13 @@
+.axis line {
+    stroke: #000;
+}
+
+.node_duration {
+    stroke: #000;
+    stroke-width: 3;
+}
+
+.time_tick {
+    stroke: #000;
+    stroke-width: 2;
+}

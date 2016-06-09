@@ -1,0 +1,160 @@
+.workspace {
+    /*border-bottom: 1px solid #e0e0e0;*/
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.left-sidebar {
+    display: block !important;
+    overflow: visible !important;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    border-right: 1px solid #ccc;
+}
+
+.left-sidebar a {
+    color: #7b7b7b;
+}
+
+.left-sidebar a:hover {
+    text-decoration: none;
+}
+
+.left-sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    height: 32px;
+}
+
+.sidebar-control {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.left-sidebar-menu {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.left-sidebar-menu>li:first-child>a {
+    border-top: none;
+}
+
+ul.left-sidebar-menu>li a {
+    position: relative;
+    display: block;
+    padding: 10px 0px 10px 15px;
+}
+
+ul.left-sidebar-menu>li a:hover {
+    background-color: #f5f5f5;
+}
+
+ul.left-sidebar-menu>li .fa {
+    width: 14px;
+    text-align: center;
+}
+
+ul.left-sidebar-menu>li .text {
+    padding-left: 8px;
+    font-size: 0.9em;
+}
+
+ul.left-sidebar-menu>li .toggle-icon {
+    font-size: 14px;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    text-shadow: none;
+}
+
+ul.left-sidebar-menu>li.active>a {
+    background-color: #f0f0f0;
+}
+
+ul.left-sidebar-menu .sub-menu {
+    position: relative;
+    display: none;
+    padding-left: 0px;
+    border-bottom: 1px solid #cccccc;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+ul.left-sidebar-menu .sub-menu>a {
+    border-left: 1px solid #cccccc;
+}
+
+li.spacer>hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-wrapper {
+    min-height: 400px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* minfied */
+.left-sidebar.minified {
+    width: 40px;
+    margin-right: -40px;
+    z-index: 9;
+}
+.left-sidebar.minified .left-sidebar-menu>li {
+    position: relative;
+}
+.left-sidebar.minified .left-sidebar-menu>li>a {
+    padding-left: 0;
+}
+.left-sidebar.minified .left-sidebar-menu>li .fa {
+    width: 40px;
+}
+.left-sidebar.minified .left-sidebar-menu>li>a>.text {
+    position: absolute;
+    display: none;
+}
+.left-sidebar.minified .left-sidebar-menu>li .toggle-icon {
+    display: none;
+}
+.left-sidebar.minified .left-sidebar-menu>li:hover>a>.text {
+    position: absolute;
+    display: block;
+    left: 40px;
+    top: 0;
+    min-width: 200px;
+    z-index: 9999;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-top: none;
+    background: #f2f2f2;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.left-sidebar.minified .left-sidebar-menu>li:hover>ul.sub-menu {
+    display: block !important;
+    min-width: 200px;
+    position: absolute;
+    margin-left: 40px;
+    z-index: 9999;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+.left-sidebar.minified .left-sidebar-menu>li:hover>ul.sub-menu>li>a {
+    padding-left: 10px;
+}
+
+.content-wrapper.expanded {
+    width: 100%;
+    padding-left: 40px;
+}

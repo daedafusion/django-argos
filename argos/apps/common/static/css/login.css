@@ -1,0 +1,22 @@
+.login {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login .logo {
+    margin-bottom: 10px;
+}
+
+.login-form {
+    max-width: 330px;
+    /*padding: 15px;*/
+    margin: 0 auto;
+}
+
+.login-form input {
+  margin-bottom: 0;
+}
+
+.login > p:first-of-type {
+    text-align: right;
+}

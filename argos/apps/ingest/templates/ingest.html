@@ -1,0 +1,58 @@
+{% extends "left_sidebar_slider.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Ingest{% endblock %}
+
+{% block active_ingest %}active{% endblock %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-cloud-download fa-fw"></i>
+            <span class="text">Collection</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">
+                    <span class="text">Network</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Collection Plans</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Auto Tasking</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-download fa-fw"></i>
+            <span class="text">Import</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="show-fdg">
+                    <span class="text">Import Engine</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Transforms</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="{% url 'ingest:research' %}" class="js-sub-menu-toggle">
+            <i class="fa fa-search-plus fa-fw"></i>
+            <span class="text">Research</span>
+        </a>
+    </li>
+{% endblock %}

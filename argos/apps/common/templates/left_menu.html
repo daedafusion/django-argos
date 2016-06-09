@@ -1,0 +1,42 @@
+{% extends "nav.html" %}
+{% load static %}
+
+{% block head_css %}
+    {{ block.super }}
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/left_menu.css" %}">
+{% endblock %}
+
+{% block body_js %}
+    {{ block.super }}
+
+    <script type="text/javascript" src="{% static 'js/left_menu.js' %}"></script>
+{% endblock %}
+
+{% block workspace %}
+    <div class="workspace">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 left-sidebar minified">
+                    <nav class="left-sidebar-nav">
+                        <ul class="left-sidebar-menu">
+                            {% block left_sidebar %}
+                            {% endblock %}
+                        </ul>
+                    </nav>
+{#                    <div class="left-sidebar-footer">#}
+{#                        <div class="sidebar-control js-toggle-minified">#}
+{#                            <i class="fa fa-fast-forward"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+                <div class="col-md-10 content-wrapper expanded">
+                    <div class="content">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

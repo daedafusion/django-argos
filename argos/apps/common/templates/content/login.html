@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head_css %}
+    {{ block.super }}
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/login.css" %}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+       <div class="login">
+
+          <form class="login-form" method="post" action="{% url 'django.contrib.auth.views.login' %}" role="form">
+              {% csrf_token %}
+              <img class="logo" src="{% static "img/daedafusion_logo_r1v2_grey.png" %}" width="300px" />
+              <input name="username" type="email" class="form-control" placeholder="Username" required autofocus>
+              <input name="password" type="password" class="form-control" placeholder="Password" required>
+
+              <button class="btn btn-default btn-block" type="submit">Sign in</button>
+              <input type="hidden" name="next" value="{{ next }}" />
+              {% if form.errors %}
+                <p>Your username and password didn't match. Please try again.</p>
+              {% endif %}
+          </form>
+
+       </div>
+
+    </div>
+
+{% endblock %}

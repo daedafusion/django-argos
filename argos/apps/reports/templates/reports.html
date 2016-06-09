@@ -1,0 +1,27 @@
+{% extends "left_sidebar.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Reports{% endblock %}
+
+{% block active_reports %}active{% endblock %}
+
+{% block left_sidebar %}
+    <li class="{% block active_sb_myreports %}{% endblock %}">
+        <a href="{% url 'reports:index' %}">
+            <i class="fa fa-folder-open-o fa-fw"></i>
+            <span class="text">My Reports</span>
+        </a>
+    </li>
+    <li class="{% block active_sb_newreport %}{% endblock %}">
+        <a href="#">
+            <i class="fa fa-print fa-fw"></i>
+            <span class="text">New Report</span>
+        </a>
+    </li>
+    <li class="{% block active_sb_publications %}{% endblock %}">
+        <a href="#">
+            <i class="fa fa-share-alt fa-fw"></i>
+            <span class="text">Publications</span>
+        </a>
+    </li>
+{% endblock %}

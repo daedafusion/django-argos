@@ -1,0 +1,46 @@
+
+.content-bar {
+    border-bottom: 1px solid #ccc;
+}
+
+.search-bar-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.search-bar {
+    display: inline-block;
+    width: 100%;
+}
+.search-bar input.form-control {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 0;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+
+.filter-wrapper {
+    padding-left: 0;
+}
+
+.asset-filter-menu>button {
+    background-image: none;
+    background-color: #fff;
+    color: #ccc;
+    border-radius: 0;
+    border-color: #ccc;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+.asset-filter-menu>button:hover,
+.asset-filter-menu>button:focus {
+    background-image: none;
+    background-color: #fff;
+    color: #ccc;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}

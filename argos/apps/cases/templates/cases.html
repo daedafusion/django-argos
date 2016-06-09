@@ -1,0 +1,63 @@
+{% extends "left_menu.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Cases{% endblock %}
+
+{% block active_cases %}active{% endblock %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-folder-open fa-fw"></i>
+            <span class="text">Cases</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="menu_new">
+                    <span class="text">New Case</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu_open">
+                    <span class="text">My Cases</span>
+                </a>
+            </li>
+            <li class="spacer">
+                <hr/>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <span class="text">--Recent Case List--</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-search fa-fw"></i>
+            <span class="text">Queries</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="menu_new">
+                    <span class="text">New Query</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu_open">
+                    <span class="text">My Queries</span>
+                </a>
+            </li>
+            <li class="spacer">
+                <hr/>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <span class="text">--favorite query list--</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+{% endblock %}

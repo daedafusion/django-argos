@@ -1,0 +1,136 @@
+!!com.daedafusion.sf.config.ServiceConfiguration
+managedObjectDescriptions:
+
+# Authentication
+
+- infClass: com.daedafusion.security.authentication.Authentication
+  implClass: com.daedafusion.security.authentication.AuthenticationImpl
+#  loaderUri: null
+#  properties: {}
+#  dependentServices: []
+
+- infClass: com.daedafusion.security.authentication.providers.AuthenticationProvider
+  implClass: com.daedafusion.aniketos.framework.providers.StubAuthenticationProvider
+  loaderUri: framework://loader/aniketos-stub-plugins/
+
+- infClass: com.daedafusion.security.authentication.providers.AuthenticationProvider
+  implClass: com.daedafusion.aniketos.framework.providers.authentication.KeyStoreX509AuthProvider
+  loaderUri: framework://loader/aniketos-default-plugins/
+
+- infClass: com.daedafusion.aniketos.framework.ServerAuthorization
+  implClass: com.daedafusion.aniketos.framework.impl.ServerAuthorizationImpl
+
+- infClass: com.daedafusion.aniketos.framework.providers.ServerAuthorizationProvider
+  implClass: com.daedafusion.aniketos.framework.providers.StubServerAuthorizationProvider
+  loaderUri: framework://loader/aniketos-stub-plugins/
+
+# Token
+
+- infClass: com.daedafusion.security.authentication.TokenExchange
+  implClass: com.daedafusion.security.authentication.TokenExchangeImpl
+
+- infClass: com.daedafusion.security.authentication.providers.TokenExchangeProvider
+  implClass: com.daedafusion.aniketos.framework.providers.token.JWTExchangeProvider
+  loaderUri: framework://loader/aniketos-default-plugins/
+
+- infClass: com.daedafusion.aniketos.framework.ServerTokenExchange
+  implClass: com.daedafusion.aniketos.framework.impl.ServerTokenExchangeImpl
+
+- infClass: com.daedafusion.aniketos.framework.providers.ServerTokenExchangeProvider
+  implClass: com.daedafusion.aniketos.framework.providers.token.JWTServerTokenExchangeProvider
+  loaderUri: framework://loader/aniketos-default-plugins/
+
+# Authorization
+
+- infClass: com.daedafusion.security.authorization.Authorization
+  implClass: com.daedafusion.security.authorization.impl.UnanimousResultAuthorizationImpl
+
+- infClass: com.daedafusion.security.authorization.providers.AuthorizationProvider
+  implClass: com.daedafusion.security.authorization.providers.impl.AlwaysPermitAuthorizationProvider
+
+- infClass: com.daedafusion.security.obligation.ObligationHandler
+  implClass: com.daedafusion.security.obligation.impl.ObligationHandlerImpl
+
+- infClass: com.daedafusion.security.obligation.providers.ObligationHandlerProvider
+  implClass: com.daedafusion.security.obligation.providers.impl.LoggingHandlerProvider
+
+- infClass: com.daedafusion.security.identity.SubjectInspector
+  implClass: com.daedafusion.security.identity.impl.SubjectInspectorImpl
+
+- infClass: com.daedafusion.security.identity.providers.SubjectInspectorProvider
+  implClass: com.daedafusion.security.identity.providers.impl.SingleAPInspector
+
+# Identity
+
+- infClass: com.daedafusion.security.identity.IdentityStore
+  implClass: com.daedafusion.security.identity.impl.IdentityStoreImpl
+
+- infClass: com.daedafusion.security.identity.providers.IdentityStoreProvider
+  implClass: com.daedafusion.aniketos.framework.providers.StubIdentityStoreProvider
+  loaderUri: framework://loader/aniketos-stub-plugins/
+
+# Admin
+
+#- uri: framework://security/admin/domain/
+#  implClass: com.daedafusion.security.framework.admin.impl.DomainAdminImpl
+#  loaderUri: null
+#  properties: {}
+#  providers: ['framework://security/admin/domain/aniketos/']
+#  dependentServices: []
+#- uri: framework://security/admin/identity/
+#  implClass: com.daedafusion.security.framework.admin.impl.IdentityAdminImpl
+#  loaderUri: null
+#  properties: {}
+#  providers: ['framework://security/admin/identity/aniketos/']
+#  dependentServices: []
+#- uri: framework://security/admin/policy/
+#  implClass: com.daedafusion.security.framework.admin.impl.PolicyAdminImpl
+#  loaderUri: null
+#  properties: {}
+#  providers: ['framework://security/admin/policy/aniketos/']
+#  dependentServices: []
+#- uri: framework://security/admin/session/
+#  implClass: com.daedafusion.security.framework.admin.impl.SessionAdminImpl
+#  loaderUri: null
+#  properties: {}
+#  providers: ['framework://security/admin/session/aniketos/']
+#  dependentServices: []
+
+# Admin Providers
+
+#- uri: framework://security/admin/domain/aniketos/
+#  implClass: com.daedafusion.aniketos.framework.providers.identity.LdapDomainAdminProvider
+#  loaderUri: framework://loader/aniketos-default-plugins/
+#  properties: {}
+#  providers: []
+#  dependentServices: []
+#- uri: framework://security/admin/identity/aniketos/
+#  implClass: com.daedafusion.aniketos.framework.providers.identity.LdapIdentityAdminProvider
+#  loaderUri: framework://loader/aniketos-default-plugins/
+#  properties: {}
+#  providers: []
+#  dependentServices: []
+#- uri: framework://security/admin/policy/aniketos/
+#  implClass: com.daedafusion.aniketos.framework.providers.identity.LdapPolicyAdminProvider
+#  loaderUri: framework://loader/aniketos-default-plugins/
+#  properties: {}
+#  providers: []
+#  dependentServices: []
+#- uri: framework://security/admin/session/aniketos/
+#  implClass: com.daedafusion.aniketos.framework.providers.token.JWTSessionAdminProvider
+#  loaderUri: framework://loader/aniketos-default-plugins/
+#  properties: {}
+#  providers: []
+#  dependentServices: []
+
+loaderDescriptions:
+
+- uri: framework://loader/aniketos-default-plugins/
+  loaderClass: com.daedafusion.sf.loader.impl.ZipLoader
+  resource: file:///opt/argos/plugins/aniketos-default-providers-plugin.zip
+  properties: {pluginName: aniketos-default-plugin}
+
+- uri: framework://loader/aniketos-stub-plugins/
+  loaderClass: com.daedafusion.sf.loader.impl.ZipLoader
+  resource: file:///opt/argos/plugins/aniketos-stub-providers-plugin.zip
+  properties: {pluginName: aniketos-stub-plugin}

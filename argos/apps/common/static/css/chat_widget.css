@@ -1,0 +1,62 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat .msg-list {
+    flex-grow: 1;
+    padding: 4px;
+    overflow-y: auto;
+}
+
+.chat .msg-send {
+    width: 100%;
+    flex-basis: 50px;
+    flex-shrink: 1;
+}
+
+.chat .room-header {
+    width: 100%;
+    flex-shrink: 1;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.chat .msg-send textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+.chat .msg {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.chat .msg-avatar {
+    flex-shrink: 1;
+}
+.chat .msg-body {
+    flex-grow: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.chat .msg-user {
+    font-size: 0.8em;
+    color: #ddd;
+    margin-bottom: 4px;
+}
+.chat .msg-timestamp {
+    flex-shrink: 1;
+    color: #ddd;
+    font-size: 0.7em;
+    padding-top: 10px;
+}
+
+.chat button {
+    width: 50%;
+    margin: 20% auto;
+}
+
+

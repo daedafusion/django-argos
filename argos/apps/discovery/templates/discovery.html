@@ -1,0 +1,238 @@
+{% extends "left_menu.html" %}
+{% load static %}
+
+{% block title %}DaedaFusion | Discovery{% endblock %}
+
+{% block active_discovery %}active{% endblock %}
+
+{% block head_css_lib %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'leaflet/dist/leaflet.css' %}">
+    <link rel="stylesheet" href="{% static 'DataTables/media/css/jquery.dataTables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'datatables-bootstrap3/BS3/assets/css/datatables.css' %}">
+    <link rel="stylesheet" href="{% static 'jstree/dist/themes/default/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'jstree-bootstrap-theme/dist/themes/proton/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-select/dist/css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-daterangepicker/daterangepicker-bs3.css' %}">
+    <link rel="stylesheet" href="{% static 'tagsinput/dist/bootstrap-tagsinput.css' %}">
+    <link rel="stylesheet" href="{% static 'gridstack/dist/gridstack.min.css' %}">
+{% endblock %}
+
+{% block head_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/jquery.contextMenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fdg-widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timeline_widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/instance_viewer_widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/instance_editor_widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/chat_widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/query-editor-widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search_widget.css' %}">
+    <link rel="stylesheet" href="{% static 'css/spinner-stack.css' %}">
+    <link rel="stylesheet" href="{% static 'css/discovery.css' %}">
+{% endblock %}
+
+{% block body_js_lib %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'd3/d3.js' %}"></script>
+    <script type="text/javascript" src="{% static 'leaflet/dist/leaflet-src.js' %}"></script>
+    <script type="text/javascript" src="{% static 'typeahead.js/dist/typeahead.jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jQuery-contextMenu/src/jquery.ui.position.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jQuery-contextMenu/src/jquery.contextMenu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'sprintf.js/dist/sprintf.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'DataTables/media/js/jquery.dataTables.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'datatables-bootstrap3/BS3/assets/js/datatables.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js-base64/base64.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jstree/dist/jstree.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap-select/dist/js/bootstrap-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap-daterangepicker/daterangepicker.js' %}"></script>
+    <script type="text/javascript" src="{% static 'tagsinput/dist/bootstrap-tagsinput.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootbox/bootbox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'underscore/underscore-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'gridstack/dist/gridstack.min.js' %}"></script>
+{% endblock %}
+
+{% block body_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/uuid.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/workspace.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/workspace_properties.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/workspace_open.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/search_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/fdg_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/layouts/columns.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/layouts/timeline.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/geo_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/timeline_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/sparql_engine.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/node_contextmenu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/instance_viewer_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/chat_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/query_editor_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/spinner_stack.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/ontology.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/instance_editor_widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/ontology_type_picker.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery/discovery.js' %}"></script>
+{% endblock %}
+
+{% block left_sidebar %}
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-share-alt-square fa-fw"></i>
+            <span class="text">Workspace</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="menu_new">
+                    <span class="text">New</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu_open">
+                    <span class="text">Open</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Save</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Save As</span>
+                </a>
+            </li>
+            <li class="spacer">
+                <hr/>
+            </li>
+            <li>
+                <a href="#" class="menu_properties">
+                    <span class="text">Properties</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Share</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">Merge</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-globe fa-fw"></i>
+            <span class="text">Views</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="show-fdg">
+                    <span class="text">Graph</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="show-timeline">
+                    <span class="text">Timeline</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="show-geo">
+                    <span class="text">Geo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <span class="text">Scoring</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="show-chat">
+                    <span class="text">Discussion</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-send-o fa-fw"></i>
+            <span class="text">Queries</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="show-manual-query">
+                    <span class="text">New Manual Query</span>
+                </a>
+            </li>
+            <li class="spacer">
+                <hr/>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="text">No Active Queries</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="js-sub-menu-toggle">
+            <i class="fa fa-check-square-o fa-fw"></i>
+            <span class="text">Checkpoints</span>
+            <i class="toggle-icon fa fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="menu_new_checkpoint">
+                    <span class="text">New Checkpoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu_manage_checkpoints">
+                    <span class="text">Manage Checkpoints</span>
+                </a>
+            </li>
+            <li class="spacer checkpoint-list">
+                <hr/>
+            </li>
+        </ul>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div class="content-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 search-bar-wrapper">
+                    <div class="search-bar"></div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="grid-stack">
+
+        </div>
+{#        <div id="fdg-pane" class="pane">#}
+{#            <div id="fdg"></div>#}
+{#        </div>#}
+{#        <div id="geo-pane" class="pane">#}
+{#            <div id="geo"></div>#}
+{#        </div>#}
+{#        <div id="timeline-pane" class="pane">#}
+{#            <div id="timeline"></div>#}
+{#        </div>#}
+{#        <div id="chat-pane" class="pane">#}
+{#            <div id="chat"></div>#}
+{#        </div>#}
+    </div>
+{% endblock %}

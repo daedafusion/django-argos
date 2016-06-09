@@ -1,0 +1,45 @@
+.top-bar {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.top-bar a {
+    color: #7b7b7b;
+    height: 39px;
+}
+
+.top-bar a:hover {
+    text-decoration: none;
+    color: #999;
+    background-color: #f5f5f5;
+    transition: 500ms linear 0s;
+}
+
+.top-bar a.active {
+    background-color: #f0f0f0;
+    box-shadow: none;
+}
+
+.top-bar .top-bar-right {
+    float: right;
+    position: relative;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.top-bar .top-bar-left {
+    float: left;
+    position: relative;
+}
+
+.logo {
+    margin-top: 6px;
+}
+
+.top-bar-right .dropdown-menu {
+    border-radius: 0;
+}
+
+.top-bar-right .dropdown-menu a {
+    height: auto;
+}

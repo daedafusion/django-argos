@@ -1,0 +1,32 @@
+.notification-tray {
+    min-height: 300px;
+    max-height: 50%;
+    width: 500px;
+    border: 2px solid #000;
+    background-color: #fff;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    overflow-y: auto;
+}
+
+.notification {
+    position: relative;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 1px solid #000;
+}
+
+.notification .timestamp {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.notification.read {
+    background-color: #ddd;
+}

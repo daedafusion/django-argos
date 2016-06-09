@@ -1,0 +1,54 @@
+{% extends "full_content.html" %}
+{% load static %}
+
+{% block head_css_lib %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'jquery-ui/jquery-ui.min.css' %}">
+    <link rel="stylesheet" href="{% static 'jquery-ui-bootstrap/jquery.ui.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'jquery-ui-bootstrap/jquery.ui.theme.font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'DataTables/media/css/jquery.dataTables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'datatables-bootstrap3/BS3/assets/css/datatables.css' %}">
+{% endblock %}
+
+{% block head_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/partitions.css' %}">
+{% endblock %}
+
+{% block body_js_lib %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'jqueryui/jquery-ui.js' %}"></script>
+    <script type="text/javascript" src="{% static 'sprintf.js/dist/sprintf.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'DataTables/media/js/jquery.dataTables.js' %}"></script>
+    <script type="text/javascript" src="{% static 'datatables-bootstrap3/BS3/assets/js/datatables.js' %}"></script>
+{% endblock %}
+
+{% block body_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/uuid.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/partition-table-widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/partition-props-widget.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/partitions.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="new-partition-wrapper">
+                    <button type="button" class="btn btn-default new-partition-button">New Partition</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="partition-table"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="partition-description"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
